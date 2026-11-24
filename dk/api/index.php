@@ -22,7 +22,14 @@ $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 if ($uri === '/' || $uri === '') {
     chdir($baseDir);
-    require $baseDir . '/index.php';
+    if (file_exists($baseDir . '/index.php')) {
+        require $baseDir . '/index.php';
+    } elseif (file_exists($baseDir . '/index.html')) {
+        readfile($baseDir . '/index.html');
+    } else {
+        echo "Files inside brbrb: ";
+        print_r(scandir($baseDir));
+    }
     exit;
 }
 
@@ -38,5 +45,9 @@ if (file_exists($file) && !is_dir($file)) {
 }
 
 chdir($baseDir);
-require $baseDir . '/index.php';
+if (file_exists($baseDir . '/index.php')) {
+    require $baseDir . '/index.php';
+} elseif (file_exists($baseDir . '/index.html')) {
+    readfile($baseDir . '/index.html');
+}
 exit;
