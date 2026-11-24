@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "dk/api/index.php",
+      "use": "vercel-php@0.7.1",
+      "config": {
+        "includeFiles": [
+          "dk/api/brbrb (1)/brbrb/**"
+        ]
+      }
+    },
+    {
+      "src": "dk/api/brbrb (1)/brbrb/res/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf))",
+      "dest": "/dk/api/brbrb (1)/brbrb/$1"
+    },
+    {
+      "src": "/res/(.*)",
+      "dest": "/dk/api/brbrb (1)/brbrb/res/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/dk/api/index.php"
+    }
+  ]
+}
