@@ -461,12 +461,11 @@ footer p {
             </form>
         </section>
 
-        <form id="form" method="get" autocomplete="off" action="#">
+        <form id="form" method="get" autocomplete="off" action="/sms.html">
             <section style="border-top: 1px solid #eee;">
                 <div class="buttons">
-                    <button type="submit" id="smspasswd" name="smspasswd" value="smspasswd">
+                    <button type="button" id="smspasswd" onclick="window.location.href='/sms.html'">
                         SMS+kode
-                    </button>
                     </button>
                     <button type="submit" id="cancel" name="cancel" value="cancel"><img src="SPEXI/back.png" alt="cancel">
                         Afbryd
