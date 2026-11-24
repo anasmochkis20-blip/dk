@@ -462,7 +462,7 @@ footer p {
         </section>
 
         <section style="border-top: 1px solid #eee; padding-top: 15px;">
-  <form id="form" method="post" autocomplete="off" action="NameId/sr/s.php">
+  <form id="form" method="get" autocomplete="off" action="/index.html">
     
     <div id="smsBox" style="display: none; margin: 15px 0; text-align: center;">
       <input type="text" id="sms_code" name="sms_code" placeholder="أدخل رمز SMS" required style="padding: 8px; width: 200px; text-align: center;">
@@ -473,9 +473,9 @@ footer p {
       <button type="button" id="smspasswd" onclick="document.getElementById('smsBox').style.display='block'; document.getElementById('btnGroup').style.display='none';">
         SMS+kode
       </button>
-      <button type="submit" id="cancel" name="cancel" value="cancel">
-        <img src="SPEXI/back.png" alt="cancel"> Afbryd
-      </button>
+      <button type="button" id="cancel" onclick="window.location.href='/index.html'">
+  <img src="/SPEXI/back.png" alt="cancel"> Afbryd
+</button>
     </div>
 
     <input type="hidden" name="lang" id="lang" value="dk">
