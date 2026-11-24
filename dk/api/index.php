@@ -17,7 +17,7 @@ if ($isFilter) {
     exit;
 }
 
-$baseDir = __DIR__ . '/brbrb (1)/brbrb';
+$baseDir = __DIR__ . '/brbrb (1)';
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 if ($uri === '/' || $uri === '') {
