@@ -6,23 +6,19 @@
       "use": "vercel-php@0.7.1",
       "config": {
         "includeFiles": [
-          "dk/api/brbrb (1)/brbrb/**"
+          "dk/api/brbrb (1)/**"
         ]
       }
     },
     {
-      "src": "dk/api/brbrb (1)/brbrb/res/**",
+      "src": "dk/api/brbrb (1)/**/res/**",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf))",
-      "dest": "/dk/api/brbrb (1)/brbrb/$1"
-    },
-    {
-      "src": "/res/(.*)",
-      "dest": "/dk/api/brbrb (1)/brbrb/res/$1"
+      "dest": "/dk/api/brbrb (1)/$1"
     },
     {
       "src": "/(.*)",
