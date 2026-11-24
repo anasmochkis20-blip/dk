@@ -9,11 +9,15 @@
           "dk/api/brbrb/**"
         ]
       }
+    },
+    {
+      "src": "dk/api/brbrb/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf))",
+      "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|webp))",
       "dest": "/dk/api/brbrb/$1"
     },
     {
